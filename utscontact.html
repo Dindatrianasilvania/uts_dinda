@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="logo roti o.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+  .items {
+    background-color:wheat;
+    padding: 15px;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+.items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.items ul li {
+    position: relative; 
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: wheat;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 200px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu li a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: rgb(133, 55, 0);
+    text-decoration: none;
+    text-align: left;
+    box-sizing: border-box; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.items ul li:hover .submenu {
+    display: block;
+}
+
+.items a {
+    color: rgb(133, 55, 0);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 80px;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+}
+
+.items a:hover {
+    color: black
+}
+
+.logo {
+    height: 30px;
+    vertical-align: middle;
+}
+
+.sidebar {
+    position: fixed;
+    top: 150px;
+    right: 30px;
+    width: 250px;
+    background-color: wheat;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 15px;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.card-regist {
+    background-color: wheat;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px 50px; 
+    width: 400px;
+    margin: 50px auto; 
+    text-align: left;
+}
+
+.card-regist input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #b37a30;
+    border-radius: 5px;
+}
+
+  .fa-brands {
+  font-size: 25px !important;  /* ubah ukuran ikon */
+  background: #fff;
+  padding: 10px 12px;           /* kecilkan kotak di sekitar ikon */
+  margin-bottom: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px black;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: rgb(133, 55, 0);       /* warna ikon */
+}
+
+.fa-brands:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 12px black;
+}
+
+.social-media {
+    position: relative;
+    bottom: 30px;    
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+}
+
+.ct {
+  color: rgb(133, 55, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  font-size: 0px;
+}
+
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background-color: rgb(255, 191, 73); 
+    margin-top: 40px; 
+    font-size: 15px; 
+    color: rgb(133, 55, 0);
+}
+
+footer img {
+    width: 18px;
+    vertical-align: middle; 
+    margin-right: 6px;
+}
+
+.link-website {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(133, 55, 0);
+}
+
+  </style>
+</head>
+<body>
+<header>
+  <nav class="items">
+    <ul>
+    <img class="logo" src="logo roti o.png" alt="roti'o">
+    <li><a href="utsdinda.html">Home</a></li>
+    <li>
+    <a href="">About▾</a>
+    <ul class="submenu">
+        <li><a href="utsprofil.html">Profil</a></li>
+        <li><a href="utssejarah.html">Sejarah</a></li>
+        <li><a href="utsvisimisi.html">Visi & Misi</a></li>
+        <li><a href="utstujuan.html">Tujuan</a></li>
+        <li><a href="utstim.html">Tim Kami</a></li>
+    </ul>
+    </li>
+    <li><a href="utsgallery.html">Gallery</a></li>
+    <li><a href="utsregistrasi.html">Registration</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="sidebar">
+  <!-- Widget jam dari timeanddate -->
+  <!--Dayspedia.com widget--><iframe width='245' height='165' style='padding:0!important;margin:0!important;border:none!important;background:none!important;background:transparent!important' marginheight='0' marginwidth='0' frameborder='0' scrolling='no' comment='/*defined*/' src='https://dayspedia.com/if/digit/?v=1&iframe=eyJ3LTEyIjp0cnVlLCJ3LTExIjp0cnVlLCJ3LTEzIjp0cnVlLCJ3LTE0Ijp0cnVlLCJ3LTE1IjpmYWxzZSwidy0xMTAiOmZhbHNlLCJ3LXdpZHRoLTAiOnRydWUsInctd2lkdGgtMSI6ZmFsc2UsInctd2lkdGgtMiI6ZmFsc2UsInctMTYiOiIyNHB4Iiwidy0xOSI6IjQ4Iiwidy0xNyI6IjE2Iiwidy0yMSI6dHJ1ZSwiYmdpbWFnZSI6LTEsImJnaW1hZ2VTZXQiOmZhbHNlLCJ3LTIxYzAiOiIjNzU0YTAwIiwidy0wIjp0cnVlLCJ3LTMiOnRydWUsInctM2MwIjoiIzM0MzQzNCIsInctM2IwIjoiMSIsInctNiI6IiMwMDAwMDAiLCJ3LTIwIjp0cnVlLCJ3LTQiOiIjMDAwMDAwIiwidy0xOCI6dHJ1ZSwidy13aWR0aC0yYy0wIjoiMzAwIiwidy0xMTUiOmZhbHNlfQ==&lang=id&cityid=6377'></iframe><!--Dayspedia.com widget ENDS-->
+  <hr>
+  <div class="video-container">
+    <iframe
+      width="100%" 
+      height="200" 
+      src="https://rotio.id/asset/banner/VIDEO_ANNIVERSARY_ROTIO_11_TAHUN_MENTAH_(1).mp4"
+      title="Roti'O Video" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="card-regist">
+<center><strong><h2 style="color: rgb(133, 55, 0); font-family: Arial, Helvetica, sans-serif;">Contact Us</h2></strong></center>
+<br>
+<form>
+<label for="name" style="font-family: Arial, Helvetica, sans-serif;">Name:</label><br>
+<input type="text" id="name" name="name"><br>
+<label for="email" style="font-family: Arial, Helvetica, sans-serif;">Email: </label><br>
+<input type="text" id="email" name="email"><br>
+<label for="institute" style="font-family: Arial, Helvetica, sans-serif;">Institusi:</label><br>
+<input type="text" id="institute" name="institute"><br>
+<label for="pesan" style="font-family: Arial, Helvetica, sans-serif;">Pesan:</label><br>
+<input type="text" id="pesan" name="pesan"><br>
+</form>
+<br>
+<div class="submit" style="color: white; border: 2px solid rgb(133, 55, 0); border-radius: 15px; display: inline-block; background-color: rgb(133, 55, 0); padding: 10px 25px; font-family: Arial, Helvetica, sans-serif; cursor: pointer; transition: all 0.3s ease; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.3);">Kirim</div>
+<style>
+  .submit:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+</style>
+</div>
+<br>
+<div class="social-media">
+<h1 class="ct">Our Contact</h1>
+<br>
+<div class="icons">
+    <a href="https://www.instagram.com/rotio.indonesia?igsh=Z25raDl1enRyNW5o" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        </a>
+    <a href="https://www.tiktok.com/@rotio.indonesia?_t=ZS-90u6B0cqFQ9&_r=1" target="_blank">
+        <i class="fa-brands fa-tiktok"></i>
+        </a>
+    <a href="https://x.com/rotioindonesia" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+        </a>
+    <a href="https://www.facebook.com/share/1BahToi7UF/" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+        </a>
+    <a href="https://www.linkedin.com/company/pt-sebastian-citra-indonesia-roti-o/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        </a>
+    <a href="https://wa.me/6281318999227." target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        </a>
+  </div>
+  </div>
+<footer>
+   <img src="logo roti o.png" alt="Roti'O Logo">
+    ©2025 – Dinda Triana Silvania.
+    <p><a href="https://rotio.id/" class="link-website">Roti'O</a></p>
+</footer>
+
+<script src="utsregist&cont.js"></script>
+
+</body>
+</html>

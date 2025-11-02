@@ -1,0 +1,422 @@
+.items {
+    background-color:wheat;
+    padding: 15px;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+.items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.items ul li {
+    position: relative; 
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: wheat;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 200px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu li a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: rgb(133, 55, 0);
+    text-decoration: none;
+    text-align: left;
+    box-sizing: border-box; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.items ul li:hover .submenu {
+    display: block;
+}
+
+.items a {
+    color: rgb(133, 55, 0);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 80px;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+}
+
+.items a:hover {
+    color: black
+}
+
+.logo {
+    height: 30px;
+    vertical-align: middle;
+}
+
+.roti {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: slideLoop 12s infinite linear;
+}
+
+@keyframes slideLoop {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-300%); }
+}
+
+.sidebar {
+    position: fixed;
+    top: 150px;
+    right: 30px;
+    width: 250px;
+    background-color: wheat;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 15px;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.profile-card {
+    border-style: solid;
+    border-radius: 15px; 
+    border-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    display: flex;               
+    flex-direction: column;      
+    align-items: center;         
+    justify-content: center;     
+    margin: 0 auto;              
+    width: fit-content;      
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 12px black;
+}
+
+.rotio {
+    height: 500px;
+    margin: 0 auto;
+}
+
+.profil-roti-o {
+    text-align: center;
+    font-size: larger;
+    color: rgb(133, 55, 0);
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.garis-1 {
+    border: none;
+    border-top: dotted;
+    border-color: chocolate;
+    width: 50%;
+}
+
+.garis-2 {
+    border: none;
+    border-top: dotted;
+    border-color: chocolate;
+    width: 50%;   
+    margin-right: 500px;
+}
+
+.produk {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    margin-right: 320px;
+}
+
+.produk img {
+    border-radius: 15px;
+    width: 400px;
+    height: 350px;
+    box-shadow: 0 3px 12px black;
+    margin-left: 250px;
+    transition: all 0.3s ease;
+}
+
+.produk img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 12px black;
+}
+
+.text {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    color: rgb(133, 55, 0);
+}
+
+.judul {
+    margin-right: 320px;
+    color: rgb(133, 55, 0);
+}
+
+.artikel-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    margin-top: 50px;
+    margin-right: 320px;
+}
+
+.card-artikel {
+    border-style: solid;
+    border-radius: 15px; 
+    border-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    display: inline-block;
+    text-align: left; 
+    width: 400px; 
+    transition: all 0.3s ease;
+}
+
+.card-artikel:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 12px black;
+    cursor: pointer;
+}
+
+.profil-artikel {
+    width: 100%;         
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tanggal-artikel {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.judul-artikel {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.judul-artikel:hover{
+    text-decoration: underline
+}
+
+.readmore {
+    color: rgb(133, 55, 0); 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+.readmore:hover {
+    text-decoration: underline;
+}
+
+.artikel-judul {
+    color: rgb(133, 55, 0);
+    text-align: center;
+    margin-right: 320px;
+}
+
+.artikel-gambar {
+    border-radius: 15px;
+    height: 500px;
+    margin-left: 150px;
+    box-shadow: 0 3px 12px black;
+}
+
+.paragraf {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 50px;
+    font-size: larger;
+    margin-right: 320px;
+}
+
+.judul-profil {
+    color: rgb(133, 55, 0);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.judul-profil::after {
+    content: "";
+    flex: 1;
+    height: 3px;
+    background-color: rgb(133, 55, 0);
+    margin-left: 15px;
+    border-radius: 2px;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+    margin-right: 320px;
+}
+
+.profil img {
+    border-radius: 15px;
+    width: 400px;
+    height: 350px;
+    box-shadow: 0 3px 12px black;
+    margin-left: 50px;
+    transition: all 0.3s ease;
+}
+
+.profil img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 12px black;
+}
+
+.profile-card-owner {
+    border-style: solid;
+    border-radius: 15px; 
+    border-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    display: flex;               
+    flex-direction: column;      
+    align-items: center;         
+    justify-content: center;     
+    margin: 0 auto;              
+    width: fit-content;      
+    text-align: center;
+    margin-left: 280px;
+    transition: all 0.3s ease;
+}
+
+.profile-card-owner:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 12px black;
+}
+
+.kegiatan-wrapper, .produk-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  margin-right: 320px;
+}
+
+.card-kegiatan, .card-produk {
+  border: solid white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+  transition: all 0.3s ease;
+}
+
+.card-kegiatan:hover, .card-produk:hover {
+  transform: scale(1.02);
+  box-shadow: 0 3px 12px black;
+  cursor: pointer;
+}
+
+.card-regist {
+    background-color: wheat;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px 50px; 
+    width: 400px;
+    margin: 50px auto; 
+    text-align: left;
+}
+
+.card-regist input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #b37a30;
+    border-radius: 5px;
+}
+
+.fa-brands {
+  font-size: 25px !important;  /* ubah ukuran ikon */
+  background: #fff;
+  padding: 10px 12px;           /* kecilkan kotak di sekitar ikon */
+  margin-bottom: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px black;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: rgb(133, 55, 0);       /* warna ikon */
+}
+
+.submit:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background-color: rgb(255, 191, 73); 
+    margin-top: 40px; 
+    font-size: 15px; 
+    color: rgb(133, 55, 0);
+}
+
+footer img {
+    width: 18px;
+    vertical-align: middle; 
+    margin-right: 6px;
+}
+
+.link-website {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(133, 55, 0);
+}
+
