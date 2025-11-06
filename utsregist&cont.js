@@ -1,10 +1,10 @@
-// === Popup Notifikasi Pesan Terkirim ===
+// Popup Notifikasi Pesan Terkirim
 document.addEventListener("DOMContentLoaded", function () {
   const submitButtons = document.querySelectorAll(".submit");
 
   submitButtons.forEach(button => {
     button.addEventListener("click", function () {
-      // bikin elemen popup
+     
       const notif = document.createElement("div");
       notif.innerHTML = `
         <div style="
@@ -43,13 +43,14 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       `;
 
-      // tampilkan popup
+     
       document.body.appendChild(notif);
 
-      // tombol untuk menutup popup
+     
       document.getElementById("okNotif").addEventListener("click", () => {
         notif.remove();
       });
     });
   });
+
 });
