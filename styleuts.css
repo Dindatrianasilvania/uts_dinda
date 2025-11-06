@@ -383,15 +383,15 @@ h1 {
 }
 
 .fa-brands {
-  font-size: 25px !important;  /* ubah ukuran ikon */
+  font-size: 25px !important;  
   background: #fff;
-  padding: 10px 12px;           /* kecilkan kotak di sekitar ikon */
+  padding: 10px 12px;          
   margin-bottom: 18px;
   border-radius: 12px;
   box-shadow: 0 2px 6px black;
   text-align: center;
   transition: all 0.3s ease;
-  color: rgb(133, 55, 0);       /* warna ikon */
+  color: rgb(133, 55, 0);      
 }
 
 .submit:hover {
@@ -419,4 +419,5 @@ footer img {
     text-decoration: none;
     color: rgb(133, 55, 0);
 }
+
 
