@@ -1,4 +1,4 @@
-// === Popup Selamat Datang ===
+// Popup Selamat Datang 
 window.addEventListener("load", function () {
   const popup = document.createElement("div");
   popup.id = "welcomePopup";
@@ -37,13 +37,13 @@ window.addEventListener("load", function () {
   });
 });
 
-// === Popup Konfirmasi Saat Klik Artikel ===
+// Popup Konfirmasi Saat Klik Artikel 
 document.addEventListener("DOMContentLoaded", function () {
   const articleLinks = document.querySelectorAll(".card-artikel a");
 
   articleLinks.forEach(link => {
     link.addEventListener("click", function (event) {
-      event.preventDefault(); // cegah pindah halaman langsung
+      event.preventDefault(); 
 
       const confirmBox = document.createElement("div");
       confirmBox.id = "confirmPopup";
@@ -85,11 +85,12 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.appendChild(confirmBox);
 
       document.getElementById("yesBtn").addEventListener("click", () => {
-        window.location.href = link.href; // buka artikel
+        window.location.href = link.href; 
       });
       document.getElementById("noBtn").addEventListener("click", () => {
-        confirmBox.remove(); // tutup popup
+        confirmBox.remove(); 
       });
     });
   });
+
 });
